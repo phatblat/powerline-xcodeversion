@@ -1,5 +1,6 @@
 *.hprof
 *.iml
+*.pyc
 *.xccheckout
 *.xcscmblueprint
 .DS_Store
