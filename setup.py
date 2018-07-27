@@ -1,21 +1,28 @@
 # vim:fileencoding=utf-8:noet
 
-from setuptools import setup
+import setuptools
 
-setup(
+with open("README.md", "r") as file:
+    long_description = file.read()
+
+setuptools.setup(
     name         = 'powerline-xcodeversion',
-    description  = 'A Powerline segment for showing the active version of Xcode',
     version      = '0.0.1',
+    description  = 'A Powerline segment for showing the active version of Xcode',
+    long_description = long_description,
+    long_description_content_type = "text/markdown",
     keywords     = 'powerline status prompt xcode version',
     license      = 'MIT',
     author       = 'Ben Chatelain',
     author_email = 'ben@octop.ad',
     url          = 'https://github.com/phatblat/powerline-xcodeversion',
-    packages     = ['powerline_xcodeversion'],
+    packages     = setuptools.find_packages(),
     classifiers  = [
-        'Environment :: Console',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
-        'Topic :: Terminals'
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: macOS",
+        "Environment :: Console",
+        "Intended Audience :: Developers",
+        "Topic :: Terminals"
     ]
 )

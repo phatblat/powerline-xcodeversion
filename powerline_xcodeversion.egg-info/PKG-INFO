@@ -1,4 +1,4 @@
-Metadata-Version: 1.1
+Metadata-Version: 2.1
 Name: powerline-xcodeversion
 Version: 0.0.1
 Summary: A Powerline segment for showing the active version of Xcode
@@ -6,10 +6,18 @@ Home-page: https://github.com/phatblat/powerline-xcodeversion
 Author: Ben Chatelain
 Author-email: ben@octop.ad
 License: MIT
-Description: UNKNOWN
+Description: 
+        # 📄 License
+        
+        This repo is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for rights and limitations.
+        
+        
 Keywords: powerline status prompt xcode version
 Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: macOS
 Classifier: Environment :: Console
 Classifier: Intended Audience :: Developers
-Classifier: License :: OSI Approved :: MIT License
 Classifier: Topic :: Terminals
+Description-Content-Type: text/markdown
