@@ -1,0 +1,8 @@
+README.md
+setup.py
+powerline_xcodeversion/__init__.py
+powerline_xcodeversion/segments.py
+powerline_xcodeversion.egg-info/PKG-INFO
+powerline_xcodeversion.egg-info/SOURCES.txt
+powerline_xcodeversion.egg-info/dependency_links.txt
+powerline_xcodeversion.egg-info/top_level.txt
