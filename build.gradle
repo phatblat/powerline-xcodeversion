@@ -18,6 +18,13 @@ wrapper {
 }
 
 task packagePython(type: ShellExec) {
+    description = "Assembles package in dist/"
     group = project.name
     command = "python3 setup.py sdist bdist_wheel"
+}
+
+task uploadTest(type: ShellExec) {
+    description = "Uploads distribution package to TestPyPI"
+    group = project.name
+    command = "twine upload --repository-url https://test.pypi.org/legacy/ dist/*"
 }
