@@ -28,3 +28,9 @@ task uploadTest(type: ShellExec) {
     group = project.name
     command = "twine upload --repository-url https://test.pypi.org/legacy/ dist/*"
 }
+
+task upload(type: ShellExec) {
+    description = "Uploads distribution package to PyPI"
+    group = project.name
+    command = "twine upload dist/*"
+}
