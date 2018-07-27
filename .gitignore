@@ -15,5 +15,6 @@ Carthage/
 Pods/
 bin/
 build/
+dist/
 gradlew.bat
 xcuserdata
