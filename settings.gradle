@@ -1,0 +1,6 @@
+/*
+ * settings.gradle
+ * powerline-xcodeversion
+ */
+
+rootProject.name = 'powerline-xcodeversion'
