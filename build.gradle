@@ -26,11 +26,17 @@ task packagePython(type: ShellExec) {
 task uploadTest(type: ShellExec) {
     description = "Uploads distribution package to TestPyPI"
     group = project.name
+    dependsOn packagePython
     command = "twine upload --repository-url https://test.pypi.org/legacy/ dist/*"
 }
 
+/*
+ * Credentials must be added to ~/.pypirc or command will stall waiting for stdin.
+ * https://docs.python.org/3/distutils/packageindex.html#pypirc
+ */
 task upload(type: ShellExec) {
     description = "Uploads distribution package to PyPI"
     group = project.name
+    dependsOn packagePython
     command = "twine upload dist/*"
 }

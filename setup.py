@@ -20,7 +20,7 @@ setuptools.setup(
     classifiers  = [
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: macOS",
+        "Operating System :: MacOS",
         "Environment :: Console",
         "Intended Audience :: Developers",
         "Topic :: Terminals"

@@ -34,7 +34,7 @@ Keywords: powerline status prompt xcode version
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
-Classifier: Operating System :: macOS
+Classifier: Operating System :: MacOS
 Classifier: Environment :: Console
 Classifier: Intended Audience :: Developers
 Classifier: Topic :: Terminals
