@@ -16,6 +16,7 @@ class XcodeVersionSegment(Segment):
         return [{
             'contents': version,
             'highlight_groups': ['xcode_version', 'xcode_build'],
+            'divider_highlight_group': 'xcode_version:divider',
         }]
 
     def marketing_version(self, pl):
