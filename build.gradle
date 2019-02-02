@@ -18,6 +18,10 @@ wrapper {
     finalizedBy removeBatchFile
 }
 
+clean.doFirst {
+    delete "$projectDir/dist/"
+}
+
 task packagePython(type: ShellExec) {
     description = "Assembles package in dist/"
     group = project.name
