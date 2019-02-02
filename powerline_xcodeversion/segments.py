@@ -4,15 +4,19 @@
 from powerline.segments import Segment, with_docstring
 from powerline.theme import requires_segment_info
 from subprocess import PIPE, Popen, call, check_output, CalledProcessError
-import os, re, string
+import os
+import re
+import string
 
 
 class XcodeVersionSegment(Segment):
 
-    def __call__(self, pl):
+    def __call__(self, pl, format="🛠️  {}"):
         version = self.marketing_version(pl)
+        pl.debug('version: ' +  version)
+
         return [{
-            'contents': version,
+            'contents': format.format(version),
             'highlight_groups': ['xcode_version', 'xcode_build'],
             'divider_highlight_group': 'xcode_version:divider',
         }]
@@ -25,7 +29,7 @@ class XcodeVersionSegment(Segment):
         pl.debug("command: " + command)
         output = self.execute(pl, command)
 
-        return "🛠️ " + output
+        return output
 
     # command is a string array
     def execute(self, pl, command):
