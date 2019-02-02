@@ -7,11 +7,9 @@ from subprocess import PIPE, Popen, call, check_output, CalledProcessError
 import os, re, string
 
 
-#@requires_segment_info
 class XcodeVersionSegment(Segment):
 
-    def __call__(self, pl): #, segment_info): #, create_watcher):
-        # pl.warn("I can haz log?")
+    def __call__(self, pl):
         version = self.marketing_version(pl)
         return [{
             'contents': version,
@@ -29,7 +27,7 @@ class XcodeVersionSegment(Segment):
 
         return "🛠️ " + output
 
-    # command is string array
+    # command is a string array
     def execute(self, pl, command):
         pl.debug('Executing command: %s' % ' '.join(command))
 
