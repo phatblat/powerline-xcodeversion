@@ -7,7 +7,7 @@ with open("README.md", "r") as file:
 
 setuptools.setup(
     name         = 'powerline-xcodeversion',
-    version      = '0.0.1',
+    version      = '1.0.0',
     description  = 'A Powerline segment for showing the active version of Xcode',
     long_description = long_description,
     long_description_content_type = "text/markdown",
