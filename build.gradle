@@ -12,7 +12,7 @@ plugins {
 task removeBatchFile(type: Delete) { delete 'gradlew.bat' }
 
 wrapper {
-    gradleVersion = '4.9'
+    gradleVersion = '5.1.1'
     distributionType = 'ALL'
     finalizedBy removeBatchFile
 }
