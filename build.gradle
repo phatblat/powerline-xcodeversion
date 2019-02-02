@@ -6,7 +6,8 @@
 import at.phatbl.shellexec.ShellExec
 
 plugins {
-    id "at.phatbl.shellexec" version "1.2.0"
+    id("base")
+    id("at.phatbl.shellexec") version "1.2.0"
 }
 
 task removeBatchFile(type: Delete) { delete 'gradlew.bat' }
